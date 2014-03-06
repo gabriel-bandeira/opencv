@@ -40,15 +40,19 @@ or
 	sudo make install
 
 4º Configure The "pkg_config"
+
 	PKG_CONFIG_PATH=/where/you/have/installed/opencv/lib/pkgconfig:${PKG_CONFIG_PATH}
 		PKG_CONFIG_PATH=/home/usr/pi/opencv/build/unix-install/pkgconfig:${PKG_CONFIG_PATH}
 	export PKG_CONFIG_PATH
 
 5º How To Compile
+
 	g++ -o my_example my_example.cpp `pkg-config opencv --cflags --libs`
 
 If it doesn't work, run
+
 	gcc -I/where/you/have/installed/opencv -L/where/you/have/installed/opencv -lcv -lhighgui -lstdc++ -o my-opencv-prgm my-opencv-prgm.c
 
 6º After compiling, if you get an error when trying to run the program, run:
+
 	ldconfig
