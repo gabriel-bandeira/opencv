@@ -36,5 +36,6 @@ or
 	cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_PYTHON_SUPPORT=ON -D BUILD_EXAMPLES=ON ..
 
 3º Make (this may take a few minutes or hours):
+
 	make
 	sudo make install
