@@ -1,7 +1,7 @@
-Library Opencv Source Code
+Opencv HowTo (using RaspberryPi)
 ======
 
-To install:
+How To Install:
 
 1º install that libs:
 
@@ -14,8 +14,7 @@ To install:
 	sudo apt-get install libjasper-dev libjasper-runtime libjasper1
 	sudo apt-get install pngtools libtiff4-dev libtiff4 libtiffxx0c2 libtiff-tools
 	sudo apt-get install libjpeg8 libjpeg8-dev libjpeg8-dbg libjpeg-prog
-	sudo apt-get install ffmpeg libavcodec-dev libavcodec52 libavformat52 libavformat-dev
-		sudo apt-get install ffmpeg libavcodec-dev libavcodec53 libavformat53 libavformat-dev
+	sudo apt-get install ffmpeg libavcodec-dev libavcodec53 libavformat53 libavformat-dev
 	sudo apt-get install libgstreamer0.10-0-dbg libgstreamer0.10-0  libgstreamer0.10-dev
 	sudo apt-get install libxine1-ffmpeg  libxine-dev libxine1-bin
 	sudo apt-get install libunicap2 libunicap2-dev
@@ -39,3 +38,9 @@ or
 
 	make
 	sudo make install
+
+
+How To Compile:
+
+	[Coming soon]
+
