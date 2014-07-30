@@ -39,6 +39,10 @@ Or, to just add the alias for this session, do:
 	$ opencv opencvtest.c
 	$ ./opencvtest
 
+======
+
+If you want, you can also do the following
+
 1º install that libs:
 
 	sudo apt-get install build-essential
