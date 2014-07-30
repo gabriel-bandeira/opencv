@@ -6,13 +6,16 @@ How To Install:
 1º Download the file "installOpencv.sh"
 
 2º Do
+
 	$ sudo chmod +x installOpencv.sh
 	$ ./installOpencv.sh
 
 3º Create the script to compile C and CPP source codes
+
 	$ nano ~/compileOpencv.sh
 
 And write on it:
+
 	if [[ $1 == *.c ]]
 	then
 		echo "compiling $1"
