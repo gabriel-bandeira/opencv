@@ -1,7 +1,40 @@
-Opencv HowTo (using RaspberryPi)
+Opencv HowTo (tested on RaspberryPi and Ubuntu 12.04)
 ======
 
 How To Install:
+
+1º Download the file "installOpencv.sh"
+
+2º Do
+	$ sudo chmod +x installOpencv.sh
+	$ ./installOpencv.sh
+
+3º Create the script to compile C and CPP source codes
+	$ nano ~/compileOpencv.sh
+
+And write on it:
+	if [[ $1 == *.c ]]
+	then
+		echo "compiling $1"
+		gcc -ggdb `pkg-config --cflags opencv` -o `basename $1 .c` $1 `pkg-config --libs opencv`;
+		echo "Output file => ${1%.*}"
+	elif [[ $1 == *.cpp ]]
+	then
+		echo "compiling $1"
+		g++ -ggdb `pkg-config --cflags opencv` -o `basename $1 .cpp` $1 `pkg-config --libs opencv`;
+		echo "Output file => ${1%.*}"
+	else
+	    echo "Please compile only .c or .cpp files"
+	fi
+		echo "Output file => ${1%.*}"
+
+4º Add an alias in .bashrc or .bash_aliases, like the line on the end
+	alias opencv="~/compile_opencv.sh"
+
+Or, to just add the alias for this session, do:
+	$ alias opencv="~/.compile_opencv.sh"
+	$ opencv opencvtest.c
+	$ ./opencvtest
 
 1º install that libs:
 
