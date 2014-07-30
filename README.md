@@ -3,16 +3,16 @@ Opencv HowTo (tested on RaspberryPi and Ubuntu 12.04)
 
 How To Install:
 
-1º Download the file "installOpencv.sh"
+1º Download the file "installOpenCV.sh"
 
 2º Do
 
-	$ sudo chmod +x installOpencv.sh
-	$ ./installOpencv.sh
+	$ sudo chmod +x installOpenCV.sh
+	$ ./installOpenCV.sh
 
 3º Create the script to compile C and CPP source codes
 
-	$ nano ~/compileOpencv.sh
+	$ nano ~/compileOpenCV.sh
 
 And write on it:
 
@@ -35,7 +35,7 @@ And write on it:
 	alias opencv="~/compile_opencv.sh"
 
 Or, to just add the alias for this session, do:
-	$ alias opencv="~/.compile_opencv.sh"
+	$ alias opencv="~/.compile_openCV.sh"
 	$ opencv opencvtest.c
 	$ ./opencvtest
 
